@@ -3,19 +3,24 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Fabricio Dujardin <dujar.coding@gmail.com>",
-  "private": true,
+  "private": false,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "watch:css": "postcss src/styles/maintailwind.css -o src/styles/main.css -w",
+    "dev":
+      "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "watch:css":
+      "postcss src/styles/maintailwind.css -o src/styles/main.css -w",
     "start": "npm run watch:css & npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "lint-autofix": "eslint --ext .js,.vue src test --fix",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "eslint-check":
+      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "build": "node build/build.js",
-    "precommit": "npm run eslint-check && npm run lint"
+    "precommit": "npm run eslint-check && npm run lint",
+    "deploy":
+      "npm run build; push-dir --dir=dist --branch=gh-pages --allow-unclean"
   },
   "dependencies": {
     "eslint-config-prettier": "^2.9.0",
@@ -92,9 +97,5 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
 }
