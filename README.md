@@ -6,7 +6,7 @@ Small note maker that parses notes written in markdown to html to normal string.
 It is saved in your local storage and update through a the watch option that vuejs provides.
 Real time stats are provided for the text.
 
-click [here]() for the website for this repo.
+click [here](https://dujar.github.io/vuejs-markdownNotes/#/) for the website for this repo.
 
 ## project - tutorial
 
@@ -20,33 +20,32 @@ worked with [tailwind](https://tailwindcss.com/) for the ui
 
 Options of the vue instance with its best practices:
 
-- watch:
-- computed:
-- methods:
-- data:
-- el:
+* watch:
+* computed:
+* methods:
+* data:
+* el:
 
 Methods of the vue instance
 
-- use:
+* use:
 
 Directives that ship with Vuejs:
 
-- v-bind --shortcut (:)
-- v-for
-- v-if & v-else & v-else-if
+* v-bind --shortcut (:)
+* v-for
+* v-if & v-else & v-else-if
 
 special attributes for html tags
 
-- title
-- keys
-
+* title
+* keys
 
 > A Vue.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
